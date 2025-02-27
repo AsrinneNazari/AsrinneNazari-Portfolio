@@ -5,7 +5,8 @@ import { Contact } from "./pages/Contact";
 import { Layout } from "./pages/Layout";
 import { Projects } from "./pages/Projects";
 import { NotFound } from "./pages/NotFound";
-import { About } from "./pages/about";
+import { About } from "./pages/About";
+
 
 const router = createBrowserRouter([
     {
