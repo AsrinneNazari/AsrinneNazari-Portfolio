@@ -1,12 +1,13 @@
+import github from "/src/img/icons8-github-50.png";
+import instagram from "/src/img/icons8-instagram-logo-50.png";
+import linkedin from "/src/img/icons8-linkedin-50.png";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8 h-32">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
-          
-          <p>
-            © {new Date().getFullYear()} Asrinne Nazari
-          </p>
+          <p>© {new Date().getFullYear()} Asrinne Nazari</p>
         </div>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a
@@ -14,21 +15,21 @@ const Footer = () => {
             aria-label="Linked in"
             className="hover:text-gray-400"
           >
-            <img src="/src/img/icons8-linkedin-50.png" alt="linkedin"/>
+            <img src={linkedin} alt="linkedin" />
           </a>
           <a
             href="https://github.com/AsrinneNazari"
             aria-label="Github"
             className="hover:text-gray-400"
           >
-            <img src="/src/img/icons8-github-50.png"/>
+            <img src={github} alt="github" />
           </a>
           <a
             href="https://www.instagram.com/asrinne"
             aria-label="Instagram"
             className="hover:text-gray-400"
           >
-            <img src="/src/img/icons8-instagram-logo-50.png" alt="instagram"/>
+            <img src={instagram} alt="instagram" />
           </a>
         </div>
       </div>

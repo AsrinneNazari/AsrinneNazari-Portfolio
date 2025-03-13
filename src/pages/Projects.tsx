@@ -19,7 +19,6 @@ const ProjectCard = ({ title, image, projectUrl }: ProjectCardProps) => {
     <a
       href={projectUrl}
       target="_blank"
-      rel="noopener noreferrer"
       className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden max-w-sm w-full"
     >
       <div className="h-48 overflow-hidden relative">
