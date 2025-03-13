@@ -17,7 +17,7 @@ export const Home = () => {
         <div className="mt-6 md:mt-0">
           <img
             className="w-64 md:w-96"
-            src="/src/img/picToPortfolio.jpg"
+            src="/public/picToPortfolio.jpg'"
             alt="Portfolio"
           />
         </div>
