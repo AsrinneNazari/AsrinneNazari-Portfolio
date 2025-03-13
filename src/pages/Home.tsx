@@ -1,3 +1,4 @@
+import picToPortfolio from "./../img/picToPortfolio.jpg";
 export const Home = () => {
   return (
     <div className="h-screen flex items-center justify-center p-4">
@@ -16,9 +17,9 @@ export const Home = () => {
         </div>
         <div className="mt-6 md:mt-0">
           <img
+            src={picToPortfolio}
+            alt="picToPortfolio"
             className="w-64 md:w-96"
-            src="/src/img/picToPortfolio.jpg"
-            alt="Portfolio"
           />
         </div>
       </div>
