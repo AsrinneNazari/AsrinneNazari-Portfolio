@@ -1,4 +1,5 @@
 import picToPortfolio from "./../img/picToPortfolio.jpg";
+
 export const Home = () => {
   return (
     <div className="h-screen flex items-center justify-center p-4">
