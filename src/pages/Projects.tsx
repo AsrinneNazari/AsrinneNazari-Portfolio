@@ -1,12 +1,20 @@
+import melloror from "/src/img/melloror.jpg";
+import zoo from "/src/img/zoo.jpg";
+import intern from "/src/img/intern.jpg";
+import tictac from "/src/img/tictac.jpg";
+import moviepage from "/src/img/moviepage.jpg";
+import flowershop from "/src/img/flowershop.jpg";
+import oldport from "/src/img/oldport.jpg";
+
 interface Project {
   title: string;
-  imageUrl: string;
+  image: string;
   projectUrl: string;
 }
 
 type ProjectCardProps = Project;
 
-const ProjectCard = ({ title, imageUrl, projectUrl }: ProjectCardProps) => {
+const ProjectCard = ({ title, image, projectUrl }: ProjectCardProps) => {
   return (
     <a
       href={projectUrl}
@@ -16,7 +24,7 @@ const ProjectCard = ({ title, imageUrl, projectUrl }: ProjectCardProps) => {
     >
       <div className="h-48 overflow-hidden relative">
         <img
-          src={imageUrl || "/api/placeholder/400/320"}
+          src={image}
           alt={title}
           className="w-full h-full object-cover"
         />
@@ -35,37 +43,37 @@ export const Projects = () => {
   const projects: Project[] = [
     {
       title: "Plumbersite - Mello Rör AB",
-      imageUrl: "/src/img/melloror.jpg",
+      image: melloror,
       projectUrl: "https://melloro.netlify.app",
     },
     {
       title: "The Zoo",
-      imageUrl: "/src/img/zoo.jpg",
+      image: zoo,
       projectUrl: "https://thezoopage.netlify.app",
     },
     {
       title: "Internship search page",
-      imageUrl: "/src/img/intern.jpg",
+      image: intern,
       projectUrl: "https://internshipsearch.netlify.app/",
     },
     {
       title: "Tic Tac Toe",
-      imageUrl: "/src/img/tictac.jpg",
+      image: tictac,
       projectUrl: "https://tici-tac-toe.netlify.app/",
     },
     {
       title: "Movie search page",
-      imageUrl: "/src/img/moviepage.jpg",
+      image: moviepage,
       projectUrl: "https://asrinnenazari.github.io/moviePage/",
     },
     {
       title: "Webshop",
-      imageUrl: "/src/img/flowershop.jpg",
+      image: flowershop,
       projectUrl: "https://asrinnenazari.github.io/the-webshop-flower-main/",
     },
     {
       title: "My first portfolio",
-      imageUrl: "/src/img/oldport.jpg",
+      image: oldport,
       projectUrl: "https://asrinnenazari.github.io/Portfolio/",
     },
   ];
