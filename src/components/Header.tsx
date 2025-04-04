@@ -1,8 +1,9 @@
-import Nav from "./Nav"
+import Nav from "./Nav";
 
-export const Header = () =>{
-
-    return <>
-    <Nav/>
+export const Header = () => {
+  return (
+    <>
+      <Nav />
     </>
-}
+  );
+};
