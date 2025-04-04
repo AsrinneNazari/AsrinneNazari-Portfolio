@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 interface INavLinkProps {
-  click: () => void;
+  click?: () => void;
 }
 
 const Nav = ({ click }: INavLinkProps) => {
