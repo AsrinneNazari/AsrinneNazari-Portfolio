@@ -22,6 +22,13 @@ const Nav = ({ click }: INavLinkProps) => {
         >
           Projects
         </NavLink>
+        <NavLink
+          to="/contact"
+          className="relative text-2xl hover:opacity-70 transition-opacity"
+          onClick={click}
+        >
+          Contact me
+        </NavLink>
       </div>
     </div>
   );

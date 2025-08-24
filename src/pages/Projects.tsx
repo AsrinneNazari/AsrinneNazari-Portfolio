@@ -26,9 +26,6 @@ const ProjectCard = ({ title, image, projectUrl }: ProjectCardProps) => {
           <h3 className="text-xl font-semibold text-black">{title}</h3>
         </div>
       </div>
-      <div className="p-6">
-        <div className="flex flex-wrap gap-2"></div>
-      </div>
     </a>
   );
 };
