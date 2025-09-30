@@ -68,7 +68,7 @@ export const Projects = () => {
     <div className="min-h-screen flex items-center justify-center py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-medium mb-12 text-center mb-20">
-          My projects
+          Projects
         </h2>
         <div className="h-20"></div>
         <div className="flex justify-center">
