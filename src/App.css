@@ -7,4 +7,121 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #fdf6f0;
+  color: #a3d2ca;
+}
+
+/* ========== LAYOUT ========== */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.techContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* ========== TEXT ========== */
+.mainHeader {
+  font-size: 2rem;
+  font-family: "Aladin", system-ui;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #6fd6c5, 2px 2px 1px #6fd6c5;
+}
+
+.subHeader {
+  font-size: 1.5rem;
+  font-family: "Aladin", system-ui;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.mainBio {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 28rem;
+  text-align: center;
+}
+
+.techInfo {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: "Aladin", system-ui;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ========== PICTURE ========== */
+.mainPic {
+  width: 15rem;
+  order: -1;
+}
+
+/* ========== DESKTOP ========== */
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    margin-top: 8rem;
+  }
+
+  .mainContentContainer {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .mainPic {
+    order: 2;
+    width: 20rem;
+  }
+  .bioContainer {
+    order: 1;
+  }
+
+  .mainHeader {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .subHeader {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .mainBio {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .techInfo {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .techContainer {
+    justify-content: flex-start;
+  }
 }
