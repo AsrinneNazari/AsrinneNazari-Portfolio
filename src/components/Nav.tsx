@@ -6,29 +6,21 @@ interface INavLinkProps {
 
 const Nav = ({ click }: INavLinkProps) => {
   return (
-    <div className="w-screen bg-white shadow-md">
-      <div className="flex justify-center items-center gap-x-20 h-15 mx-auto py-5 m-8">
-        <NavLink
-          to="/"
-          className="relative text-2xl hover:opacity-70 transition-opacity"
-          onClick={click}
-        >
+    <div className="navbar">
+      <div className="navbarLinks">
+        <NavLink to="/" className="navlink" onClick={click}>
           Home
         </NavLink>
-        <NavLink
-          to="/projects"
-          className="relative text-2xl hover:opacity-70 transition-opacity"
-          onClick={click}
-        >
+        <a href="#techStack" className="navlink" onClick={click}>
+          Tech Stack
+        </a>
+        <a href="#projectInfo" className="navlink" onClick={click}>
           Projects
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className="relative text-2xl hover:opacity-70 transition-opacity"
-          onClick={click}
-        >
-          Contact me
-        </NavLink>
+        </a>
+
+        <a href="#contactInfo" className="navlink" onClick={click}>
+          Contact
+        </a>
       </div>
     </div>
   );

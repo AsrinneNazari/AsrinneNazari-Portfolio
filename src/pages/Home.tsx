@@ -1,4 +1,7 @@
+import ContactForm from "../components/contactForm";
+import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
+import { Projects } from "./Projects";
 
 export const Home = () => {
   return (
@@ -23,16 +26,29 @@ export const Home = () => {
           <img src={picToPortfolio} alt="picToPortfolio" />
         </div>
       </div>
-      <div>
-        <div className="techInfo">Tech Stack</div>
-        <div className="techContentContainer">
+
+      <div className="techInfo" id="techStack">
+        Tech Stack
+      </div>
+      <div className="techContentContainer">
         <div className="techContainer">
-          <img src="/src/img/html5-icon.png" alt="html5" />
-          <img src="/src/img/CSS-icon.png" alt="css" />
-          <img src="/src/img/JS-icon.png" alt="javascript" />
-          <img src="/src/img/" alt="react" />
-          <img src="/src/img/Vue-icon.png" alt="vue" />
+          <TechStack />
         </div>
+      </div>
+      <div className="projectInfo" id="projectInfo">
+        Projects
+      </div>
+      <div className="projectContentContainer">
+        <div className="projectContainer">
+          <Projects />
+        </div>
+      </div>
+      <div className="contactInfo" id="contactInfo">
+        Contact me!
+      </div>
+      <div className="contactContentContainer">
+        <div className="contactContainer">
+          <ContactForm />
         </div>
       </div>
     </div>
