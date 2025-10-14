@@ -1,19 +1,69 @@
 const TechStack = () => {
+  const techStack = [
+    {
+      name: "JavaScript",
+    },
+    {
+      name: "TypeScript",
+    },
+    {
+      name: "CSS",
+    },
+    {
+      name: "SCSS",
+    },
+    {
+      name: "HTML5",
+    },
+    {
+      name: "React",
+    },
+    {
+      name: "Vue",
+    },
+    {
+      name: "Tailwind CSS",
+    },
+    {
+      name: "Node.js",
+    },
+    {
+      name: "Vite",
+    },
+    {
+      name: "Next.js",
+    },
+    {
+      name: "RESTful APIs",
+    },
+    {
+      name: "JSON",
+    },
+    {
+      name: "Git",
+    },
+    {
+      name: "Supabase",
+    },
+    {
+      name: "GitHub",
+    },
+    {
+      name: "Netlify",
+    },
+    {
+      name: "Figma",
+    },
+  ];
+
   return (
-    <>
-      <div className="tech">Javascript</div>
-      <div className="tech">Typescript</div>
-      <div className="tech">CSS</div>
-      <div className="tech">SCSS</div>
-      <div className="tech">HTML5</div>
-      <div className="tech">React</div>
-      <div className="tech">Vue</div>
-      <div className="tech">Tailwind</div>
-      <div className="tech">Node.js</div>
-      <div className="tech">Vite</div>
-      <div className="tech">Github</div>
-      <div className="tech">Netlify</div>
-    </>
+    <div className="techContainer">
+      {techStack.map((tech) => (
+        <div key={tech.name} className="tech">
+          <div>{tech.name}</div>
+        </div>
+      ))}
+    </div>
   );
 };
 

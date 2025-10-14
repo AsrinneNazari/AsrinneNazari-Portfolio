@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   background-color: #fdf6f0;
-  color: #a3d2ca;
 }
 
 html {
@@ -22,6 +21,7 @@ html {
   align-items: center;
   margin-top: 4rem;
   padding: 0 1rem;
+  color: #a3d2ca;
 }
 
 .mainContentContainer {
@@ -30,14 +30,15 @@ html {
   align-items: center;
   gap: 1.5rem;
   width: 100%;
+  color: #a3d2ca;
 }
 
 .techContentContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 /* ========== TEXT ========== */
@@ -96,6 +97,7 @@ html {
 /* ========== NAVBAR ========== */
 
 .navbar {
+  color: #a3d2ca;
   width: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -126,8 +128,8 @@ html {
 /* ========== TECHSTACK ========== */
 
 .tech {
-  background: linear-gradient(135deg, #f9c5bd, #c8e7e1); 
-  color: #333; 
+  background: linear-gradient(135deg, #f9c5bd, #c8e7e1);
+  color: #333;
   font-family: "Lato", sans-serif;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
@@ -151,6 +153,15 @@ html {
   width: 70%;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.tech:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #c8e7e1, #f9c5bd);
+}
+
+.tech * {
+  background: none !important; /* Tar bort ev. bakgrund från texten */
 }
 
 /* ========== DESKTOP ========== */
@@ -195,6 +206,10 @@ html {
   }
 
   .techContainer {
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
   }
 }
