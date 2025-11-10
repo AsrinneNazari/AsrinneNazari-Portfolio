@@ -16,17 +16,17 @@ type ProjectCardProps = Project;
 const ProjectCard = ({ title, image, projectUrl }: ProjectCardProps) => {
   return (
     <a
-      href={projectUrl}
-      target="_blank"
-      className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden max-w-sm w-full"
-    >
-      <div className="h-48 overflow-hidden relative">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 flex items-center justify-center backdrop-blur-sm bg-opacity-30">
-          <h3 className="text-xl font-semibold text-black">{title}</h3>
-        </div>
-      </div>
-    </a>
+  href={projectUrl}
+  target="_blank"
+  className="projectCard"
+>
+  <div className="projectCardImageContainer">
+    <img src={image} alt={title} />
+    <div className="projectCardOverlay">
+      <h3>{title}</h3>
+    </div>
+  </div>
+</a>
   );
 };
 
@@ -65,17 +65,14 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-16">
-      <div className="container mx-auto px-4">
-        <div className="h-20"></div>
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 max-w-6xl">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
-          </div>
-        </div>
+  <div className="projectsSection">
+    <div className="projectsWrapper">
+      <div className="projectsGrid">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
     </div>
-  );
+  </div>
+);
 };

@@ -8,11 +8,11 @@ const ContactForm = () => {
     <>
       <div className="inputForm">
         <form onSubmit={handleSubmit}>
-          name
+          Name
           <input type="text" name="name" className="inputField" />
-          email
+          Email
           <input type="email" name="email" className="inputField" />
-          text
+          Message
           <textarea name="message" className="inputField" />
           <button type="submit">Send</button>
         </form>

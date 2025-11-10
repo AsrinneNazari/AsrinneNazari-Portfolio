@@ -41,6 +41,10 @@ html {
   margin-top: 2rem;
 }
 
+.projectContentContainer {
+  margin-top: 100px;
+}
+
 /* ========== TEXT ========== */
 .mainHeader {
   font-size: 2rem;
@@ -84,14 +88,40 @@ html {
 
 /* ========== CONTACT ========== */
 
-.inputForm {
+.contactContentContainer {
+  height: 50vh;
+  width: 50%;
+}
+
+.contactContainer {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .inputField {
   background-color: white;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.4rem;
+}
+textarea {
+  height: 10rem;
+  padding: 0.4rem;
+}
+
+form {
+  display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+button {
+  background: pink;
+  cursor: pointer;
+  width: 25%;
 }
 
 /* ========== NAVBAR ========== */
@@ -161,7 +191,77 @@ html {
 }
 
 .tech * {
-  background: none !important; /* Tar bort ev. bakgrund från texten */
+  background: none !important;
+}
+
+/* ===== PROJECT CARD ===== */
+
+.projectCard {
+  display: block;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-width: 350px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.projectCard:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projectCardImageContainer {
+  height: 12rem; /* 48 tailwind */
+  overflow: hidden;
+  position: relative;
+}
+
+.projectCardImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectCardOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projectCardOverlay h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+}
+
+/* ===== PROJECTS GRID SECTION ===== */
+
+.projectsSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.projectsWrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  justify-items: center;
 }
 
 /* ========== DESKTOP ========== */
@@ -180,6 +280,7 @@ html {
     order: 2;
     width: 20rem;
   }
+
   .bioContainer {
     order: 1;
   }
@@ -202,14 +303,29 @@ html {
   .techInfo,
   .projectInfo {
     font-size: 2rem;
-    text-align: left;
+  }
+
+  .contactContentContainer {
+    width: 50%;
   }
 
   .techContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .contactContainer > * {
+    flex: 1;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

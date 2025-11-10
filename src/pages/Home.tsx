@@ -1,4 +1,6 @@
+
 import ContactForm from "../components/contactForm";
+import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
 import { Projects } from "./Projects";
@@ -27,18 +29,18 @@ export const Home = () => {
         </div>
       </div>
 
+      <div className="techContentContainer">
       <div className="techInfo" id="techStack">
         Tech Stack
       </div>
-      <div className="techContentContainer">
         <div className="techContainer">
           <TechStack />
         </div>
       </div>
+      <div className="projectContentContainer">
       <div className="projectInfo" id="projectInfo">
         Projects
       </div>
-      <div className="projectContentContainer">
         <div className="projectContainer">
           <Projects />
         </div>
@@ -48,6 +50,7 @@ export const Home = () => {
       </div>
       <div className="contactContentContainer">
         <div className="contactContainer">
+          <ContactInfo/>
           <ContactForm />
         </div>
       </div>
