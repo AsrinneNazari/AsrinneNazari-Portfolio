@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -89,8 +86,8 @@ html {
 /* ========== CONTACT ========== */
 
 .contactContentContainer {
-  height: 50vh;
   width: 50%;
+  min-height: 50vh;
 }
 
 .contactContainer {
@@ -214,7 +211,7 @@ button {
 }
 
 .projectCardImageContainer {
-  height: 12rem; /* 48 tailwind */
+  height: 12rem;
   overflow: hidden;
   position: relative;
 }
@@ -241,7 +238,7 @@ button {
   color: black;
 }
 
-/* ===== PROJECTS GRID SECTION ===== */
+/* ===== PROJECTS SECTION ===== */
 
 .projectsSection {
   min-height: 100vh;
@@ -262,6 +259,38 @@ button {
   grid-template-columns: 1fr;
   gap: 2.5rem;
   justify-items: center;
+}
+
+.footer {
+  min-height: 7rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.footerIcon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.footerIcon:hover {
+  opacity: 0.7;
+}
+
+.footerIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ========== DESKTOP ========== */
