@@ -54,6 +54,9 @@ const TechStack = () => {
     {
       name: "Figma",
     },
+    {
+      name: "Strapi",
+    }
   ];
 
   return (
