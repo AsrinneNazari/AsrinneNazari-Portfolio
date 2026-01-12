@@ -33,7 +33,7 @@ html {
 .techContentContainer {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: auto;
   align-items: center;
   margin-top: 2rem;
 }
