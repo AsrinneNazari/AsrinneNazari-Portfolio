@@ -1,6 +1,6 @@
 export const ContactInfo = () =>{
 
     return <>
-    <div>Just write me something fun!</div>
+    <div>If you have questions or just want to chat, contact me! :)</div>
     </>
 }
