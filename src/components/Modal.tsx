@@ -9,10 +9,10 @@ const Modal = ({show, onClose}: IModalProps) =>{
     return <>
     <div className="modal-overlay">
   <div className="modal-content">
-    <p>Meddelande skickat</p>
-    <p>Vi återkommer till dig så fort som möjligt!</p>
+    <p>Message sent!</p>
+    <p>I will get back to you as soon as possible!</p>
     <div className="modal-actions">
-      <button onClick={onClose}>Stäng</button>
+      <button onClick={onClose}>Close</button>
     </div>
   </div>
 </div>

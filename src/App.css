@@ -116,9 +116,24 @@ form {
 }
 
 button {
-  background: pink;
+  background-color: #5fa8a3; /* mörkare variant av #a3d2ca */
+  color: #ffffff;
   cursor: pointer;
   width: 25%;
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #4b9690;
+}
+
+button:active {
+  background-color: #3e7f7a;
+  transform: scale(0.97);
 }
 
 /* ========== MODAL ========== */
