@@ -299,8 +299,9 @@ body.modal-open {
 
 .projectCardOverlay h3 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
+  background-color: transparent;
 }
 
 /* ===== PROJECTS SECTION ===== */
@@ -365,18 +366,25 @@ body.modal-open {
   }
 
   .mainContentContainer {
+    display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
-  .mainPic {
-    order: 2;
-    width: 20rem;
+  .mainPic img {
+    width: 100%;
+    object-fit: cover;
   }
 
   .bioContainer {
-    order: 1;
+    flex: 0.5;
+  }
+
+  .mainPic {
+    flex: 0.4;
   }
 
   .mainHeader {

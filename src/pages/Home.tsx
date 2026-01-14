@@ -13,14 +13,11 @@ export const Home = () => {
           <h1 className="mainHeader">Asrinne Nazari</h1>
           <h1 className="subHeader">Front-end developer</h1>
           <p className="mainBio">
-            Hi! I’m Asrinne, a frontend developer who transitioned from a career
-            as an X-ray technician. With a strong foundation in HTML, CSS, and
-            JavaScript, I create responsive, user-friendly websites that deliver
-            great user experiences. I’m curious and engaged, with over 9 years
-            of experience working in collaborative teams. When I’m not coding,
-            you’ll often find me walking in the woods to reset my mind. I also
-            have a passion for gardening and spending a lot of time in my
-            allotment.
+            Hi! I’m Asrinne, a frontend developer who transitioned into tech after several years working as an X-ray technician. My background in healthcare has given me a strong sense of responsibility, attention to detail, and long experience of working closely in multidisciplinary teams.
+
+Today, I focus on building responsive and user-friendly interfaces, mainly in React, and I’m currently expanding my skills in Next.js. I enjoy working thoughtfully with code, paying attention to structure, usability, and the small details that make a difference for the user.
+
+I’m a curious and engaged team player, and I value clear communication and collaboration. Outside of coding, I recharge by walking in the woods and spending time in my allotment, where gardening is a big passion of mine.
           </p>
         </div>
 
