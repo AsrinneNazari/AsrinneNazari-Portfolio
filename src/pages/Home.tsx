@@ -1,4 +1,4 @@
-import ContactForm from '../components/ContactForm'
+// import ContactForm from '../components/ContactForm'
 import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
@@ -47,7 +47,7 @@ I’m a curious and engaged team player, and I value clear communication and col
       <div className="contactContentContainer">
         <div className="contactContainer">
           <ContactInfo/>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
       </div>
     </div>
