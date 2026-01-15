@@ -1,4 +1,3 @@
-
 import ContactForm  from "../components/ContactForm.tsx";
 import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
