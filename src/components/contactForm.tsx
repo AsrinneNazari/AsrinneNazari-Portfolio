@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { FormEvent, useRef, useState } from "react";
 import Modal from "./Modal";
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const startInput = {
       name: "",
       title: "",
@@ -67,4 +67,4 @@ const handleInputChange = (
     </>
   );
 };
-export default ContactForm;
+

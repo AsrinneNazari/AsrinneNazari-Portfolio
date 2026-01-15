@@ -1,5 +1,5 @@
 
-import ContactForm from "../components/ContactForm.tsx";
+import {ContactForm} from "../components/ContactForm";
 import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
