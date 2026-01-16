@@ -1,4 +1,5 @@
 // import ContactForm from '../components/ContactForm'
+import { motion } from "motion/react";
 import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
@@ -9,8 +10,22 @@ export const Home = () => {
     <div className="mainContainer">
       <div className="mainContentContainer">
         <div className="bioContainer">
-          <h1 className="mainHeader">Asrinne Nazari</h1>
-          <h1 className="subHeader">Front-end developer</h1>
+                    <motion.h1
+      className="mainHeader"
+      initial={{ x: 200, opacity: 0 }}  
+      animate={{ x: 0, opacity: 1 }}    
+      transition={{ duration: 0.7, ease: "easeOut" }} 
+    >
+      Asrinne Nazari
+    </motion.h1>
+          <motion.h1
+      className="subHeader"
+      initial={{ x: -200, opacity: 0 }}   
+      animate={{ x: 0, opacity: 1 }}      
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
+      Front-end developer
+    </motion.h1>
           <p className="mainBio">
             Hi! I’m Asrinne, a frontend developer who transitioned into tech after several years working as an X-ray technician. My background in healthcare has given me a strong sense of responsibility, attention to detail, and long experience of working closely in multidisciplinary teams.
 

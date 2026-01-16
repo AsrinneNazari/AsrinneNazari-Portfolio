@@ -250,6 +250,7 @@ body.modal-open {
 .tech:hover {
   transform: scale(1.05);
   background: linear-gradient(135deg, #c8e7e1, #f9c5bd);
+  cursor: pointer;
 }
 
 .tech * {

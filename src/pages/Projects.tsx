@@ -3,7 +3,6 @@ import zoo from "/src/img/zoo.jpg";
 import intern from "/src/img/intern.jpg";
 import tictac from "/src/img/tictac.jpg";
 import moviepage from "/src/img/moviepage.jpg";
-import flowershop from "/src/img/flowershop.jpg";
 
 interface Project {
   title: string;
@@ -56,11 +55,6 @@ export const Projects = () => {
       title: "Movie search page",
       image: moviepage,
       projectUrl: "https://asrinnenazari.github.io/moviePage/",
-    },
-    {
-      title: "Webshop",
-      image: flowershop,
-      projectUrl: "https://asrinnenazari.github.io/the-webshop-flower-main/",
     },
   ];
 
