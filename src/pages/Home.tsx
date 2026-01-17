@@ -4,6 +4,7 @@ import { ContactInfo } from "../components/ContactInfo";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
 import { Projects } from "./Projects";
+import ContactForm from "../components/contactForm";
 
 export const Home = () => {
   return (
@@ -31,7 +32,7 @@ export const Home = () => {
 
 Today, I focus on building responsive and user-friendly interfaces, mainly in React, and I’m currently expanding my skills in Next.js. I enjoy working thoughtfully with code, paying attention to structure, usability, and the small details that make a difference for the user.
 
-I’m a curious and engaged team player, and I value clear communication and collaboration. Outside of coding, I recharge by walking in the woods and spending time in my allotment, where gardening is a big passion of mine.
+I’m a curious and engaged team player, and I value clear communication and collaboration. Outside of coding, I recharge by walking in the woods and spending time in my allotment.
           </p>
         </div>
 
@@ -62,7 +63,7 @@ I’m a curious and engaged team player, and I value clear communication and col
       <div className="contactContentContainer">
         <div className="contactContainer">
           <ContactInfo/>
-          {/* <ContactForm /> */}
+          <ContactForm/>
         </div>
       </div>
     </div>

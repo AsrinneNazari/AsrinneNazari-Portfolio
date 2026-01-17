@@ -82,6 +82,9 @@ html {
   width: 15rem;
   order: -1;
 }
+.mainPic img {
+  border-radius: 50%;
+}
 
 /* ========== CONTACT ========== */
 
@@ -380,12 +383,11 @@ body.modal-open {
     object-fit: cover;
   }
 
-  .bioContainer {
-    flex: 0.5;
-  }
-
   .mainPic {
     flex: 0.4;
+  }
+  .bioContainer {
+    flex: 0.5;
   }
 
   .mainHeader {
