@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fdf6f0;
+  /* background-color: #fdf6f0; */
 }
 
 html {
@@ -19,6 +19,7 @@ html {
   margin-top: 4rem;
   padding: 0 1rem;
   color: #a3d2ca;
+  background-color: #fdf6f0;
 }
 
 .mainContentContainer {
@@ -28,6 +29,7 @@ html {
   gap: 1.5rem;
   width: 100%;
   color: #a3d2ca;
+  background-color: #fdf6f0;
 }
 
 .techContentContainer {
@@ -71,7 +73,7 @@ html {
 .projectInfo,
 .contactInfo {
   margin-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-family: "Aladin", system-ui;
   letter-spacing: 3px;
   text-align: center;
@@ -89,7 +91,9 @@ html {
 /* ========== CONTACT ========== */
 
 .contactContentContainer {
-  width: 50%;
+  padding: 1rem;
+  border: pink solid 2px;
+  width: 100%;
   min-height: 50vh;
 }
 
@@ -192,11 +196,12 @@ body.modal-open {
 /* ========== NAVBAR ========== */
 
 .navbar {
+  background-color: white;
   color: #a3d2ca;
   width: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   position: sticky;
-  top: 10;
+  top: 0px;
   z-index: 100;
 }
 
@@ -210,6 +215,7 @@ body.modal-open {
 }
 
 .navlink {
+  cursor: pointer;
   font-size: 1rem;
   text-decoration: none;
   color: inherit;
@@ -336,6 +342,7 @@ body.modal-open {
   padding: 0.5rem 0;
   display: flex;
   align-items: flex-end;
+  background-color: #fdf6f0;
 }
 
 .footerInner {
@@ -411,7 +418,7 @@ body.modal-open {
   }
 
   .contactContentContainer {
-    width: 50%;
+    width: 60%;
   }
 
   .techContainer {
