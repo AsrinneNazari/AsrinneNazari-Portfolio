@@ -2,7 +2,7 @@
 import { motion } from "motion/react";
 import { useRef } from "react";
 import { ContactInfo } from "../components/ContactInfo";
-import ContactForm from "../components/contactForm";
+import ContactForm from "../components/ContactForm";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
 import Nav from "../components/Nav";
@@ -55,22 +55,28 @@ Today, I focus on building responsive and user-friendly interfaces, mainly in Re
 I’m a curious and engaged team player, and I value clear communication and collaboration. Outside of coding, I recharge by walking in the woods and spending time in my allotment.
           </p>
         </div>
-
         <div className="mainPic">
           <img src={picToPortfolio} alt="picToPortfolio" />
         </div>
       </div>
-
-      <div className="techContentContainer">
+         <div className="resumeContainer">
+          <a className="resumeLink"
+  href="/AsrinneNazariResume_.pdf"
+  download
+>
+  Download my resume
+</a>
+</div>
         <section className="techInfo" ref={techRef}>Tech Stack</section>
+      <div className="techContentContainer">
         <div className="techContainer">
           <TechStack />
         </div>
       </div>
-      <div className="projectContentContainer">
       <section className="projectInfo" ref={projectRef}>
         Projects
       </section>
+      <div className="projectContentContainer">
         <div className="projectContainer">
           <Projects />
         </div>

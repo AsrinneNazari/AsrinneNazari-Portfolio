@@ -40,17 +40,15 @@ html {
   margin-top: 2rem;
 }
 
-.projectContentContainer {
-  margin-top: 100px;
-}
-
 /* ========== TEXT ========== */
 .mainHeader {
   font-size: 2rem;
   font-family: "Aladin", system-ui;
   letter-spacing: 3px;
   text-align: center;
-  text-shadow: 1px 1px 1px #6fd6c5, 2px 2px 1px #6fd6c5;
+  text-shadow:
+    1px 1px 1px #6fd6c5,
+    2px 2px 1px #6fd6c5;
 }
 
 .subHeader {
@@ -69,14 +67,19 @@ html {
   text-align: center;
 }
 
+.resumeContainer {
+  margin-top: 2rem;
+}
+
 .techInfo,
 .projectInfo,
 .contactInfo {
   margin-top: 3rem;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: "Aladin", system-ui;
   letter-spacing: 3px;
   text-align: center;
+  scroll-margin-top: 80px;
 }
 
 /* ========== PICTURE ========== */
@@ -122,25 +125,53 @@ form {
   gap: 0.5rem;
 }
 
-button {
-  background-color: #5fa8a3; /* mörkare variant av #a3d2ca */
+/* ========== BUTTON AND RESUMELINK ========== */
+
+button,
+.resumeLink {
+  background: linear-gradient(135deg, #5fa8a3, #4b9690);
   color: #ffffff;
   cursor: pointer;
+
   width: 25%;
-  padding: 0.6rem 0.75rem;
+  padding: 0.65rem 0.9rem;
+
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+
   font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  letter-spacing: 0.5px;
+
+  box-shadow: 0 4px 10px rgba(95, 168, 163, 0.25);
+
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
 }
 
-button:hover {
-  background-color: #4b9690;
+button:hover,
+.resumeLink:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(95, 168, 163, 0.35);
+
+  background: linear-gradient(135deg, #6bbcb6, #5fa8a3);
 }
 
-button:active {
-  background-color: #3e7f7a;
-  transform: scale(0.97);
+button:active,
+.resumeLink:active {
+  transform: translateY(0) scale(0.97);
+
+  box-shadow: 0 4px 8px rgba(95, 168, 163, 0.25);
+}
+
+button:focus-visible,
+.resumeLink:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(163, 210, 202, 0.6),
+    0 6px 16px rgba(95, 168, 163, 0.3);
 }
 
 /* ========== MODAL ========== */
@@ -253,7 +284,6 @@ body.modal-open {
   justify-content: center;
   width: 70%;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .tech:hover {
@@ -412,15 +442,6 @@ body.modal-open {
     font-size: 1.1rem;
   }
 
-  .techInfo,
-  .projectInfo {
-    font-size: 2rem;
-  }
-
-  .contactContentContainer {
-    width: 60%;
-  }
-
   .techContainer {
     display: flex;
   }
@@ -431,6 +452,10 @@ body.modal-open {
     justify-content: space-between;
     align-items: flex-start;
     gap: 4rem;
+  }
+
+  .contactContentContainer {
+    width: 60%;
   }
 
   .contactContainer > * {
