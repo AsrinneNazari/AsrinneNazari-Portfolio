@@ -1,26 +1,31 @@
-import { NavLink } from "react-router-dom";
-
 interface INavLinkProps {
-  click?: () => void;
+  onTech?: () => void;
+  onProjects?: () => void;
+  onContact?: () => void;
 }
 
-const Nav = ({ click }: INavLinkProps) => {
+const Nav = ({ onTech, onProjects, onContact }: INavLinkProps) => {
   return (
     <div className="navbar">
       <div className="navbarLinks">
-        <NavLink to="/" className="navlink" onClick={click}>
+        <div
+          className="navlink"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           Home
-        </NavLink>
-        <a href="#techStack" className="navlink" onClick={click}>
-          Tech Stack
-        </a>
-        <a href="#projectInfo" className="navlink" onClick={click}>
-          Projects
-        </a>
+        </div>
 
-        <a href="#contactInfo" className="navlink" onClick={click}>
+        <div className="navlink" onClick={onTech}>
+          Tech Stack
+        </div>
+
+        <div className="navlink" onClick={onProjects}>
+          Projects
+        </div>
+
+        <div className="navlink" onClick={onContact}>
           Contact
-        </a>
+        </div>
       </div>
     </div>
   );

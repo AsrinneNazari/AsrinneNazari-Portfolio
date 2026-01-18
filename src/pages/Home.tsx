@@ -1,13 +1,33 @@
 // import ContactForm from '../components/ContactForm'
 import { motion } from "motion/react";
+import { useRef } from "react";
 import { ContactInfo } from "../components/ContactInfo";
+import ContactForm from "../components/contactForm";
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
+import Nav from "../components/Nav";
 import { Projects } from "./Projects";
-import ContactForm from "../components/contactForm";
 
 export const Home = () => {
-  return (
+  const techRef = useRef<HTMLDivElement | null>(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
+   const scrollToTech = () =>
+    techRef.current?.scrollIntoView({ behavior: "smooth" });
+
+  const scrollToProjects = () =>
+    projectRef.current?.scrollIntoView({ behavior: "smooth" });
+
+  const scrollToContact = () =>
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  return (<>
+  <Nav
+        onTech={scrollToTech}
+        onProjects={scrollToProjects}
+        onContact={scrollToContact}
+      />
+    
     <div className="mainContainer">
       <div className="mainContentContainer">
         <div className="bioContainer">
@@ -42,24 +62,21 @@ I’m a curious and engaged team player, and I value clear communication and col
       </div>
 
       <div className="techContentContainer">
-      <div className="techInfo" id="techStack">
-        Tech Stack
-      </div>
+        <section className="techInfo" ref={techRef}>Tech Stack</section>
         <div className="techContainer">
           <TechStack />
         </div>
       </div>
       <div className="projectContentContainer">
-      <div className="projectInfo" id="projectInfo">
+      <section className="projectInfo" ref={projectRef}>
         Projects
-      </div>
+      </section>
         <div className="projectContainer">
           <Projects />
         </div>
       </div>
-      <div className="contactInfo" id="contactInfo">
-        Contact me!
-      </div>
+      
+        <section className="contactInfo" ref={contactRef}>Contact me</section>
       <div className="contactContentContainer">
         <div className="contactContainer">
           <ContactInfo/>
@@ -67,5 +84,6 @@ I’m a curious and engaged team player, and I value clear communication and col
         </div>
       </div>
     </div>
+    </>
   );
 };
