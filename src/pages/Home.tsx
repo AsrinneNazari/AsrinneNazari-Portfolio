@@ -8,6 +8,7 @@ import picToPortfolio from "./../img/picToPortfolio.jpg";
 import Nav from "../components/Nav";
 import { Projects } from "./Projects";
 
+
 export const Home = () => {
   const techRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
