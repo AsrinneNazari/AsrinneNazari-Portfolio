@@ -18,7 +18,7 @@ html {
   align-items: center;
   margin-top: 4rem;
   padding: 0 1rem;
-  color: #a3d2ca;
+  color: #22443f;
   background-color: #fdf6f0;
 }
 
@@ -28,7 +28,7 @@ html {
   align-items: center;
   gap: 1.5rem;
   width: 100%;
-  color: #a3d2ca;
+  color: #22443f;
   background-color: #fdf6f0;
 }
 
@@ -47,8 +47,8 @@ html {
   letter-spacing: 3px;
   text-align: center;
   text-shadow:
-    1px 1px 1px #6fd6c5,
-    2px 2px 1px #6fd6c5;
+    1px 1px 1px white,
+    2px 2px 1px white;
 }
 
 .subHeader {
@@ -228,7 +228,7 @@ body.modal-open {
 
 .navbar {
   background-color: white;
-  color: #a3d2ca;
+  color: #22443f;
   width: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   position: sticky;
