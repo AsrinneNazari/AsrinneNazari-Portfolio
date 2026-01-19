@@ -6,7 +6,6 @@ import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
 import Nav from "../components/Nav";
 import { Projects } from "./Projects";
-import ContactForm from "../components/ContactForm";
 
 
 export const Home = () => {
@@ -87,7 +86,6 @@ I’m a curious and engaged team player, and I value clear communication and col
       <div className="contactContentContainer">
         <div className="contactContainer">
           <ContactInfo/>
-          <ContactForm/>
         </div>
       </div>
     </div>
