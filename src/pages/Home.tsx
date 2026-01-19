@@ -1,12 +1,12 @@
-// import ContactForm from '../components/ContactForm'
 import { motion } from "motion/react";
 import { useRef } from "react";
 import { ContactInfo } from "../components/ContactInfo";
-import ContactForm from "../components/ContactForm";
+
 import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
 import Nav from "../components/Nav";
 import { Projects } from "./Projects";
+import ContactForm from "../components/ContactForm";
 
 
 export const Home = () => {
