@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useRef } from "react";
+import { File } from "lucide-react";
 import { ContactInfo } from "../components/ContactInfo";
 
 import TechStack from "../components/TechStack";
@@ -65,7 +66,7 @@ I’m a curious and engaged team player, and I value clear communication and col
   href="/AsrinneNazariResume_.pdf"
   download
 >
-  Download my resume
+  Download my resume  <File />
 </a>
 </div>
         <section className="techInfo" ref={techRef}>Tech Stack</section>

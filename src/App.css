@@ -4,11 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #fdf6f0; */
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #fdf6f0;
 }
 
 /* ========== LAYOUT ========== */
@@ -127,23 +127,23 @@ form {
 
 /* ========== BUTTON AND RESUMELINK ========== */
 
+.resumeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 button,
 .resumeLink {
   background: linear-gradient(135deg, #5fa8a3, #4b9690);
   color: #ffffff;
   cursor: pointer;
-
-  width: 25%;
+  font-family: "Inter", system-ui, sans-serif;
   padding: 0.65rem 0.9rem;
-
-  border: none;
   border-radius: 8px;
-
   font-weight: 600;
   letter-spacing: 0.5px;
-
   box-shadow: 0 4px 10px rgba(95, 168, 163, 0.25);
-
   transition:
     background 0.25s ease,
     transform 0.2s ease,
@@ -189,6 +189,7 @@ button:focus-visible,
 
 .modal-content {
   background-color: white;
+  font-family: "Inter", system-ui, sans-serif;
   padding: 36px;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -262,7 +263,7 @@ body.modal-open {
 .tech {
   background: linear-gradient(135deg, #f9c5bd, #c8e7e1);
   color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   font-size: 1rem;
@@ -309,6 +310,7 @@ body.modal-open {
   width: 100%;
   cursor: pointer;
   text-decoration: none;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .projectCard:hover {
@@ -365,6 +367,18 @@ body.modal-open {
   grid-template-columns: 1fr;
   gap: 2.5rem;
   justify-items: center;
+}
+
+.projectCardContent {
+  padding: 1rem 1.25rem;
+  background-color: white;
+}
+
+.projectCardContent p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
 }
 
 .footer {
