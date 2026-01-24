@@ -300,16 +300,12 @@ body.modal-open {
 /* ===== PROJECT CARD ===== */
 
 .projectCard {
-  display: block;
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
   overflow: hidden;
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
-  cursor: pointer;
-  text-decoration: none;
   font-family: "Inter", system-ui, sans-serif;
 }
 
@@ -346,6 +342,16 @@ body.modal-open {
   background-color: transparent;
 }
 
+.projectCardLink {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.code {
+  font-weight: 700;
+}
+
 /* ===== PROJECTS SECTION ===== */
 
 .projectsSection {
@@ -372,6 +378,7 @@ body.modal-open {
 .projectCardContent {
   padding: 1rem 1.25rem;
   background-color: white;
+  height: 7rem;
 }
 
 .projectCardContent p {
