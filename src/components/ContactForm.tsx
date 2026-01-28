@@ -59,7 +59,7 @@ const handleInputChange = (
           Email
           <input type="email" name="email" className="inputField" value={inputValue.email} onChange={handleInputChange} />
           Message
-          <textarea name="message" className="inputField" value={inputValue.message} onChange={handleInputChange}/>
+          <textarea name="message" className="inputField message" value={inputValue.message} onChange={handleInputChange}/>
           <button type="submit">Send</button>
         </form>
         <Modal show={showModal} onClose={onClose} />
