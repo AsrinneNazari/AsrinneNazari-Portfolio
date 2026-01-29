@@ -64,7 +64,7 @@ export const Projects = () => {
       projectUrl: "https://www.marianco.org/",
       description: "Vulenteering work",
       github:"",
-      code:["Next.js", "Typescript", "TailwindCSS", "Strapi", "CMS", "HTML"]
+      code:["Next.js", "Typescript", "TailwindCSS", "Strapi","API", "CMS", "HTML"]
     },
     {
       title: "Plumbersite - Mello Rör AB",

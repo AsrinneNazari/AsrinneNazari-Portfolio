@@ -26,17 +26,17 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text-main);
   background: radial-gradient(
     circle at 20% 20%,
     var(--bg-lilac-1) 0%,
     var(--bg-lilac-2) 30%,
     var(--bg-main) 65%
   );
-}
-
-body {
-  font-family: "Inter", system-ui, sans-serif;
-  color: var(--text-main);
 }
 
 /* ========== LAYOUT ========== */
@@ -449,7 +449,6 @@ body.modal-open {
 /* ===== PROJECTS SECTION ===== */
 
 .projectsSection {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,8 +486,7 @@ body.modal-open {
 .footer {
   min-height: 7rem;
   display: flex;
-  align-items: flex-end;
-  background-color: var(--bg-main);
+  align-items: center;
 }
 
 .footerInner {
