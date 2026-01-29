@@ -3,6 +3,7 @@ import zoo from "/src/img/zoo.jpg";
 import intern from "/src/img/intern.jpg";
 import tictac from "/src/img/tictac.jpg";
 import moviepage from "/src/img/moviepage.jpg";
+import marianco from "/src/img/marianco.jpg"
 import { Github } from "lucide-react";
 
 interface Project {
@@ -60,7 +61,7 @@ export const Projects = () => {
   const projects: Project[] = [
     {
       title: "Marianco",
-      image: melloror,
+      image: marianco,
       projectUrl: "https://www.marianco.org/",
       description: "Vulenteering work",
       github:"",
