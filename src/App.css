@@ -101,6 +101,12 @@ body {
   text-align: center;
 }
 
+.resumeHint {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
 .resumeContainer {
   margin-top: 2rem;
 }

@@ -64,39 +64,39 @@ export const Projects = () => {
       projectUrl: "https://www.marianco.org/",
       description: "Vulenteering work",
       github:"",
-      code:["Next.js", "Typescript", "TailwindCSS", "Strapi", "CMS"]
+      code:["Next.js", "Typescript", "TailwindCSS", "Strapi", "CMS", "HTML"]
     },
     {
       title: "Plumbersite - Mello Rör AB",
       image: melloror,
       projectUrl: "https://melloro.netlify.app",
       description: "Freelance",
-      github:"https://github.com/AsrinneNazari/moviePage",
-      code:["React","Typescript","TailwindCSS","Supabase"]
+      github:"https://github.com/AsrinneNazari/plumber-project",
+      code:["React","Typescript","TailwindCSS","Supabase", "HTML"]
     },
     {
       title: "The Zoo",
       image: zoo,
       projectUrl: "https://thezoopage.netlify.app",
       description: "School project",
-      github:"githublink",
-      code:["React", "SCSS"]
+      github:"https://github.com/AsrinneNazari/react-the-zoo-AsrinneNazari",
+      code:["React", "Typescript", "SCSS", "API", "HTML"]
     },
     {
       title: "Internship search page",
       image: intern,
       projectUrl: "https://internshipsearch.netlify.app/",
       description: "School project",
-      github:"githublink",
-      code:["React", ""]
+      github:"https://github.com/AsrinneNazari/case-af-group-3-main",
+      code:["React", "API", "HTML"]
     },
     {
       title: "Tic Tac Toe",
       image: tictac,
       projectUrl: "https://tici-tac-toe.netlify.app/",
       description: "School project",
-      github:"githublink",
-      code:["Vue.js","SCSS"]
+      github:"https://github.com/AsrinneNazari/vue-tic-tac-toe-AsrinneNazari",
+      code:["Vue.js","SCSS", "HTML"]
     },
     {
       title: "Movie search page",
@@ -104,7 +104,7 @@ export const Projects = () => {
       projectUrl: "https://asrinnenazari.github.io/moviePage/",
       description: "Search for a movie page",
       github:"https://github.com/AsrinneNazari/moviePage",
-      code:["Typescript"]
+      code:["Typescript", "API", "HTML"]
     },
   ];
 
