@@ -237,14 +237,13 @@ button:active,
 
 .modal-content {
   background-color: white;
-  font-family: "Inter", system-ui, sans-serif;
-  padding: 36px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  animation: scaleIn 0.2s ease-out;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  width: 90vw;
+  max-width: 900px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes fadeIn {
@@ -481,6 +480,21 @@ body.modal-open {
   color: #444;
 }
 
+/* ===== VIDEO ===== */
+
+.videoWrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
 /* ===== FOOTER ===== */
 
 .footer {
@@ -507,6 +521,13 @@ body.modal-open {
 }
 
 /* ========== DESKTOP ========== */
+
+@media (min-width: 1024px) {
+  .modal-content {
+    padding: 2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mainContainer {
     margin-top: 8rem;
