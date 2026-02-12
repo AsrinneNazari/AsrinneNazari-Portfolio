@@ -1,13 +1,12 @@
 import { motion } from "motion/react";
 import { useRef } from "react";
 import { File } from "lucide-react";
-import { ContactInfo } from "../components/ContactInfo";
-
-import TechStack from "../components/TechStack";
 import picToPortfolio from "./../img/picToPortfolio.jpg";
+import { ContactInfo } from "../components/ContactInfo";
+import TechStack from "../components/TechStack";
+import ContactForm from "../components/ContactForm";
 import Nav from "../components/Nav";
 import { Projects } from "./Projects";
-import ContactForm from "../components/ContactForm";
 
 
 export const Home = () => {
