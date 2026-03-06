@@ -62,7 +62,7 @@ I’m a curious and engaged team player, and I value clear communication and col
       </div>
          <div className="resumeContainer">
           <a className="resumeLink"
-  href="/AsrinneNazariResume_.pdf"
+  href="/resume-AsrinneNazari_.pdf"
   download
 >
   Download my resume  <File />
