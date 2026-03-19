@@ -580,6 +580,12 @@ body.modal-open {
   border-radius: 0.75rem;
 }
 
+.closeButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 /* ===== FOOTER ===== */
 
 .footer {

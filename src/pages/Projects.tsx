@@ -5,7 +5,7 @@ import tictac from "/src/img/tictac.jpg";
 import moviepage from "/src/img/moviepage.jpg";
 import marianco from "/src/img/marianco.jpg"
 import neovici from "/src/img/neovicipic.jpg"
-import { Film, Github } from "lucide-react";
+import { Film, Github, X } from "lucide-react";
 import { useState } from "react";
 
 interface Project {
@@ -98,7 +98,9 @@ const ProjectCard = ({
           <div
             className="modal-content"
             onClick={(e) => e.stopPropagation()}
-          >
+          ><div className="closeButton">
+            <X onClick={() => setShowVideo(false)}/>
+              </div>
             <div className="videoWrapper">
               <iframe
                 src={videoUrl}
@@ -119,12 +121,12 @@ export const Projects = () => {
       image: marianco,
       projectUrl: "https://www.marianco.org/",
       description: "Volunteer work: improving website interactivity, implementing a donation system, handling translations, and maintaining the codebase (bug fixes and improvements).",
-      code:["Next.js", "Typescript", "TailwindCSS", "Strapi","API", "CMS", "HTML"]
+      code:["Next.js", "Typescript", "TailwindCSS", "Strapi", "API", "CMS", "HTML"]
     },
     {
       title: "Neovici - Internship Demo",
       image: neovici,
-      description: "Short walkthrough of a feature I worked on during my frontend internship.",
+      description: "Short walkthrough of a feature I worked on during my internship.",
       videoUrl: "https://player.vimeo.com/video/1159793079",
       code:["lit-html", "Typescript", "React hooks", "Web components", "SCSS", "API", "HTML"]
     },
